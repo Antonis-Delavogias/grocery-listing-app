@@ -10,7 +10,7 @@ export function GroceriesItems({items, onToggleItem, onDeleteItem}) {
           />
           <span style={item.packed ? {textDecoration: 'line-through'} : {}}>
             {item.quantity} - {item.description}{' '}
-            <button onClick={() => onDeleteItem(item.id)}>❌</button>
+            <button onClick={() => onDeleteItem(item.id)}>✖</button>
           </span>
         </div>
       ))}
