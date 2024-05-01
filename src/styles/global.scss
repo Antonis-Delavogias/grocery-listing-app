@@ -1,24 +1,70 @@
-// https://bit.ly/3aI9YSD - universal box-sizing with inheritance.
-html {
-  box-sizing: border-box;
-}
-*,
-*:before,
-*:after {
-  box-sizing: inherit;
-}
+@import url('https://fonts.googleapis.com/css2?family=Viga&display=swap');
 
-html,
-body {
+* {
   margin: 0;
   padding: 0;
-
-  // https://mzl.la/2KnTfHh
-  // size/line-height | family
-  font: 16px 'Open Sans', Arial, Helvetica, sans-serif;
 }
 
-/*
-  Add your custom global styles here.
-  The styles provided below are a minimal suggested starting point.
-*/
+body {
+  font-family: sans-serif;
+}
+
+.header {
+  display: flex;
+  background-color: #75a47f;
+  justify-content: center;
+  font-family: 'Viga';
+}
+
+h1 {
+  color: #afd198;
+  text-align: center;
+  font-size: 6rem;
+  text-transform: uppercase;
+  font-weight: 400;
+  word-spacing: 30px;
+  letter-spacing: -5px;
+  padding: 2.4rem 0;
+}
+
+.grocery-list {
+  display: none; /* Initially hide the list  */
+}
+
+.grocery-list.show {
+  display: flex;
+  background-color: #f7dcb9;
+  justify-content: center;
+  padding: 25px;
+}
+
+.add-form {
+  background-color: #fcffe0;
+  padding: 2.8rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8rem;
+}
+
+.add-form button {
+  text-transform: uppercase;
+  background-color: #76c7ad;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.footer {
+  display: flex;
+  background-color: #75a47f;
+  justify-content: space-evenly;
+  font-weight: 700;
+  padding: 3.2rem 0;
+}
+
+.footer button {
+  text-transform: uppercase;
+  background-color: #afd198;
+  border-radius: 5px;
+  padding: 5px;
+}
